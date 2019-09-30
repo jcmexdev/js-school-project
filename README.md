@@ -1,2 +1,13 @@
 # js-school-project
-This is the final product of the Platzi JavaScript Course 
+
+## About this project 
+
+This is the final product of the Platzi JavaScript Course
+
+## Install
+
+
+## Contributing
+
+
+## Licence
