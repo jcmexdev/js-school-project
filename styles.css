@@ -1,0 +1,118 @@
+body {
+    margin: 0px;
+    font-family: 'Muli', sans-serif;
+  }
+
+  .header {
+    background-color: #21C08B;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .header__menu {
+    margin-right: 30px;
+  }
+
+  .header__menu ul {
+    display: none;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -5px;
+  }
+
+  .header__menu:hover ul {
+    display: block;
+  }
+
+  .header__menu li {
+    margin: 10px 0px;
+  }
+
+  .header__menu li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .header__menu li a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+  .header__menu--profile {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .header__menu--profile img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+
+  .login	{
+    background: linear-gradient(#21C08B, #AB88FF);
+    display: flex;
+    flex-direction: column;
+		justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    min-height: calc(100vh - 200px);
+  }
+  
+  .login__container {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+  }
+
+  .login__container--form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login__container--form label {
+    font-size: 14px;
+  }
+
+  .login_container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10px;
+  }
+
+  .login_container--remember-me a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .login_container--remember-me a:hover {
+    text-decoration: underline;
+  }
+
+  .login__container--social-media div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
