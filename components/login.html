@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Iniciar sesión</title>
+        <style>
+            body {
+                margin: 0px;
+                font-family: 'Muli', sans-serif;
+                background: #8f57fd;
+            }
+
+            .login {
+                background: linear-gradient(#21c08b, #8f57fd);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 30px;
+                min-height: calc(100vh - 200px);
+            }
+
+            .login__container {
+                background: rgba(255, 255, 255, 0.1);
+                border: 2px solid white;
+                border-radius: 40px;
+                color: white;
+                padding: 60px 68px 40px;
+                min-height: 700px;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+            }
+
+            .login__container--form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .login__container--form label {
+                font-size: 14px;
+            }
+
+            .login_container--remember-me {
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-top: 10px;
+            }
+
+            .login_container--remember-me a {
+                color: white;
+                font-size: 14px;
+                text-decoration: none;
+            }
+
+            .login_container--remember-me a:hover {
+                text-decoration: underline;
+            }
+
+            .login__container--social-media > div {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            .login__container--social-media > div > img {
+                width: 30px;
+                margin-right: 10px;
+            }
+
+            .login__container--register {
+                font-size: 14px;
+            }
+
+            .login__container--register a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .login__container--register a:hover {
+                text-decoration: underline;
+            }
+
+            .input {
+                background-color: transparent;
+                border: 0px;
+                border-bottom: 2px solid white;
+                font-family: 'Muli', sans-serif;
+                font-size: 16px;
+                margin-bottom: 20px;
+                padding: 0px 20px;
+                outline: none;
+                height: 50px;
+            }
+
+            ::placeholder {
+                color: white;
+            }
+
+            .button {
+                background-color: rgba(255, 255, 255, 0.1);
+                border: none;
+                border-radius: 25px;
+                color: white;
+                cursor: pointer;
+                font-size: 16px;
+                font-family: 'Muli', sans-serif;
+                font-weight: bold;
+                height: 50px;
+                letter-spacing: 1px;
+                margin: 10px 0px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .login__container {
+                    background: transparent;
+                    width: 100%;
+                    padding: 0px;
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="login">
+            <section class="login__container">
+                <h2>Iniciar Sesión</h2>
+                <form action="" class="login__container--form">
+                    <input
+                        class="input"
+                        type="text"
+                        name=""
+                        placeholder="Correo"
+                    />
+                    <input
+                        class="input"
+                        type="password"
+                        name=""
+                        placeholder="Contraseña"
+                    />
+                    <button class="button">Iniciar sesión</button>
+                    <div class="login_container--remember-me">
+                        <label>
+                            <input type="checkbox" name="" value="" />Recuérdate
+                        </label>
+                        <a href="/">Olvide mi contraseña</a>
+                    </div>
+                </form>
+                <section class="login__container--social-media">
+                    <div>
+                        <img src="../assets/img/google-icon.png" alt="Google" />
+                        Inicia sesión con Google
+                    </div>
+                    <div>
+                        <img
+                            src="../assets/img/twitter-icon.png"
+                            alt="Twitter"
+                        />
+                        Inicia sesión con Twitter
+                    </div>
+                </section>
+                <p class="login__container--register">
+                    No tienes ninguna cuenta <a href="/">Regístrate</a>
+                </p>
+            </section>
+        </section>
+    </body>
+</html>

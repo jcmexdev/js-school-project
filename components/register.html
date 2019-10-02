@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="register.css" />
+        <title>Registro</title>
+        <style>
+            body {
+                margin: 0px;
+                font-family: 'Muli', sans-serif;
+                background-color: #8f57fd;
+            }
+
+            .header {
+                background-color: #21c08b;
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .header__img {
+                width: 200px;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+
+            .register {
+                background: linear-gradient(#21c08b, #8f57fd);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 30px;
+                min-height: calc(100vh - 200px);
+            }
+
+            .register__container {
+                background: rgba(255, 255, 255, 0.1);
+                border: 2px solid white;
+                border-radius: 40px;
+                color: white;
+                padding: 60px 68px 40px;
+                min-height: 700px;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+            }
+
+            .register__container--form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .input {
+                background: transparent;
+                border: 0px;
+                border-bottom: 2px solid white;
+                height: 50px;
+                margin-bottom: 20px;
+                padding: 0px 20px;
+                outline: none;
+                font-family: 'Muli', sans-serif;
+                font-size: 14px;
+                color: white;
+            }
+
+            .button {
+                background: rgba(255, 255, 255, 0.2);
+                height: 50px;
+                border-radius: 25px;
+                border: none;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                font-family: 'Muli', sans-serif;
+                margin: 10px 0px;
+                cursor: pointer;
+                letter-spacing: 1px;
+            }
+
+            ::placeholder {
+                color: white;
+            }
+
+            .footer {
+                background-color: #8f57fd;
+                display: flex;
+                align-items: center;
+                height: 100px;
+                widows: 100%;
+                padding: 0px 30px;
+            }
+
+            .footer a {
+                color: white;
+                font-size: 14px;
+                padding-left: 50px;
+                text-decoration: none;
+            }
+
+            .footer a:hover {
+                text-decoration: underline;
+            }
+
+            .register__container--login {
+                text-decoration: none;
+                color: white;
+                text-align: center;
+            }
+
+            .register__container--login:hover {
+                text-decoration: underline;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .register {
+                    padding: 0px 30px;
+                }
+                .register__container {
+                    padding: 0px;
+                    box-shadow: none;
+                    width: 100%;
+                    border-radius: 0px;
+                    border: 0px;
+                    background: transparent;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <img class="header__img" src="../assets/img/logo-platzi-video-BW2.png" alt="" />
+        </header>
+        <section class="register">
+            <div class="register__container">
+                <h2>Registrate</h2>
+                <form action="" class="register__container--form">
+                    <input class="input" type="text" placeholder="Nombre" />
+                    <input class="input" type="text" placeholder="Correo" />
+                    <input
+                        class="input"
+                        type="password"
+                        placeholder="Contraseña"
+                    />
+                    <button class="button">Registrarme</button>
+                </form>
+                <a class="register__container--login" href="/"
+                    >Iniciar sesión</a
+                >
+            </div>
+        </section>
+        <footer class="footer">
+            <a href="/">Términos de uso</a>
+            <a href="/">Declaración de privacidad</a>
+            <a href="/">Centro de ayuda</a>
+        </footer>
+    </body>
+</html>
